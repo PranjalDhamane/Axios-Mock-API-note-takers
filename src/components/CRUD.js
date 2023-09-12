@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "./crud.css"
 
 
 function Crud() {
@@ -39,6 +40,8 @@ function Crud() {
   return (
     <div className="container">
       <h1>Welcome to Note-Taker</h1>
+      <h6>React Project by Pranjal Dhamane</h6>
+      <hr></hr>
       <form>
         <div className="form-group">
           <label>Title :</label>
@@ -60,11 +63,11 @@ function Crud() {
           />
         </div>
         <br></br>
-        <button className="btn btn-primary" onClick={handlleSubmit}>Submit</button>
-        <button className="btn btn-success" onClick={handlleUpdate}>Update</button>
-        <button className="btn btn-danger" onClick={handlleDelete}>Delete</button>
+        <button  className="btn btn-primary" onClick={handlleSubmit} >Submit</button>
+        {/* <button className="btn btn-success" onClick={handlleUpdate}>Update</button> */}
+        {/* <button className="btn btn-danger" onClick={handlleDelete}>Delete</button> */}
       </form>
-      <hr />
+      
     </div>
   );
 }
